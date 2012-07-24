@@ -138,7 +138,7 @@ void Background::create()
 
 void Background::setCameraDistance( float distance )
 {
-	static const float minimum = 0.03f;
+	static const float minimum = 0.06f;
 	static const float maximum = 0.3f;
 
 	if( distance > 1500.0f ) {

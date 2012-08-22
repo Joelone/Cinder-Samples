@@ -60,6 +60,10 @@ public:
 	void	enablePointSprites();
 	void	disablePointSprites();
 
+	//
+	float	getAspectRatio() const { return mAspectRatio; }
+	void	setAspectRatio( float aspect ) { mAspectRatio = aspect; }
+
 	//! load a comma separated file containing the HYG star database
 	void	load( ci::DataSourceRef source );
 
@@ -72,5 +76,6 @@ private:
 	ci::gl::Texture		mTextureStar;
 	ci::gl::Texture		mTextureCorona;
 	ci::gl::VboMesh		mVboMesh;
-};
 
+	float				mAspectRatio;
+};
